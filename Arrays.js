@@ -1,3 +1,6 @@
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+// primera forma
 let dayofweek = new Array();
 dayofweek = new Array(7);
 dayofweek = new Array('Lunes', 'Martes', 'Miercoels', 'Jueves', 'Viernes', 'Sabado', 'Domingo');
@@ -7,7 +10,7 @@ let dayOfWeekDos = ['Lunes', 'Martes', 'Miercoels', 'Jueves', 'Viernes', 'Sabado
 for(let i = 0; i < dayOfWeekDos.length; i++){
   //  console.log(dayOfWeekDos[i]);
 }
-console.log(dayOfWeekDos.length);
+//console.log(dayOfWeekDos.length);
 //inserting an element at the end of the array
 let numbers = [0,1,2,3,4,5,6];
 numbers[numbers.length] = 7;
@@ -26,8 +29,18 @@ numbers.shift();
 let numbersArrays = [-3,-2,-1,0,1,5,6,7,8,9,10];
 numbersArrays.splice(5,0,2,3,4); // 5 position initial, 0 number to delete, 2 count numbers add, 3,4 numbers added
 for(let i = 0; i < numbersArrays.length; i++){
-    console.log(numbersArrays[i]);
+//    console.log(numbersArrays[i]);
 }
+
+//joining multiple arrays
+const zero = 0;
+const positiveNumbers = [1,2,3];
+const negativeNumbers = [-3,-2,-1];
+let numbersJoin = negativeNumbers.concat(zero, positiveNumbers);
+for(let i = 0; i < numbersJoin.length; i++){
+    console.log(numbersJoin[i]);
+}
+
 
 
 
