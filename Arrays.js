@@ -38,10 +38,17 @@ const positiveNumbers = [1,2,3];
 const negativeNumbers = [-3,-2,-1];
 let numbersJoin = negativeNumbers.concat(zero, positiveNumbers);
 for(let i = 0; i < numbersJoin.length; i++){
-    console.log(numbersJoin[i]);
+   // console.log(numbersJoin[i]);
+}
+//iteratos functios
+let numbersTest = [1,2,3,4,5,6,7,8,9];
+function isEven(x){
+    //return true if x is a multiple of 2
+    console.log(x);
+    return x % 2 === 0 ? true : false;
 }
 
-
+numbersTest.every(isEven);
 
 
 
